@@ -1,0 +1,13 @@
+Para este projeto pensamos em um sistema bem simples de leituras de posições a partir de sensores e inserção por parte do usuário da nova posição desejada.
+Neste momento temos a parte mais complicada do projeto, que é fazer os cálculos de movimentações necessárias de cada motor para atingir a nova posição saindo da
+antiga. Nota-se que não teremos uma posição neutra para onde o end-effector volta a cada ciclo de inserção de dados e movimentação, mas sim fica parado na última
+posição inserida até que haja a leitura de uma nova.
+Para este cálculo, utiliza-se as equações obtidas pela equipe através de estudos das forças atuantes. É de extrema importância notar que os motores devem agir com
+perfeita sincronia, pois nenhum dos cabos que os conecta ao end-effector pode ficar frouxo, ou seja, não estar completamente esticado, durante qualquer parte do
+processo, pois, deste modo, este motor deixará de fazer força pelo cabo, onde não haverá mais tração, inutilizando todas as equações utilizadas.
+Foi planejado, também, a construção de um protótipo (MVP) de movimentação 2D para início da programação e melhor entendimento de possíveis erros na construção,
+nos cálculos ou na arquitetura escolhida.
+Para a parte de Sistemas embarcados foi imaginado algo bem simples pelo grupo, como detalha a imagem da Entrega1, possuindo apenas Motores e encoders, porém não são
+sistemas separados, ou seja, não é um ou dois encoders por motor e sim todos os encoders auxiliam nos cálculos de movimentação de todos os sensores.
+Para os motores, chegamos à conclusão de que o Motor de passo 28BYJ-48 seria uma ótima escolha com bom custo benefício, considerando a exatidão necessária, como
+explicado acima e para os sensores estudamos algumas câmeras oCam, também atingindo a precisão necessária deste projeto.
